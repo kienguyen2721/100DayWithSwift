@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterViewCell" id="gTV-IL-0wX" customClass="CharacterViewCell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="639" height="486"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="639" height="486"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-7" translatesAutoresizingMaskIntoConstraints="NO" id="O8u-GN-h5o">
+                        <rect key="frame" x="0.0" y="0.0" width="639" height="456"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbs-8K-FR6">
+                        <rect key="frame" x="299" y="459" width="41.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="O8u-GN-h5o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Wx-90-oeb"/>
+                <constraint firstAttribute="trailing" secondItem="O8u-GN-h5o" secondAttribute="trailing" id="86g-jE-3ZO"/>
+                <constraint firstItem="wbs-8K-FR6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="EL3-zm-3kZ"/>
+                <constraint firstItem="O8u-GN-h5o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KCu-6G-mpC"/>
+                <constraint firstAttribute="bottom" secondItem="O8u-GN-h5o" secondAttribute="bottom" constant="30" id="nZq-Kx-lHl"/>
+                <constraint firstItem="wbs-8K-FR6" firstAttribute="top" secondItem="O8u-GN-h5o" secondAttribute="bottom" constant="3" id="xlt-wH-iN1"/>
+            </constraints>
+            <size key="customSize" width="639" height="486"/>
+            <string key="customModule">PROJECT_29___MUTIPLE_COLLECTION_VIEWS_PROJECT_29___MUTIPLE_COLLECTION_VIEWS_PROJECT_29___MUTIPLE_COLLECTION_VIEWS_PROJECT_29___MUTIPLE_COLLECTION_VIEWS_PROJECT_29__MUTIPLE_COLLECTION_VIEWS</string>
+            <connections>
+                <outlet property="iconImageView" destination="O8u-GN-h5o" id="FOG-hb-sfP"/>
+                <outlet property="tittleLabel" destination="wbs-8K-FR6" id="Q4I-AE-qZb"/>
+            </connections>
+            <point key="canvasLocation" x="173.18840579710147" y="33.482142857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="profile-7" width="800" height="500"/>
+    </resources>
+</document>
